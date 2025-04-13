@@ -1,0 +1,49 @@
+html, body /*기본 크기*/{
+    height: 100%;
+    margin: 0;
+}
+body /*디자인, 정렬*/{
+    background-color: tomato;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center; 
+}
+.outside, .inside /*공통 위치*/{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.outside /*공통 디자인*/{
+    background: wheat;
+    border: 1px solid black;
+}  
+
+#item1, #item2, #item3 /*공통 디자인, 공통 위치*/{
+    position: absolute;
+    height: 50px;
+    background-color: teal;
+    margin: 0 auto; /*공통 디자인*/
+    left: 50%;
+    transform: translate(-50%, -50%); /*공통 위치*/
+}
+#item1, #item3 /*공통 디자인*/{
+    width: 50px;
+}
+
+#item1 /*개별 위치*/{
+    top: 20%;   
+}
+#item2 /*개별 디자인, 개별 위치*/{
+    width: 150px;
+    border: 1px dashed wheat; /*디자인*/
+    top: 50%; /*위치*/
+}
+#item3 /*개별 위치*/{
+    top: 80%;
+}

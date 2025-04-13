@@ -1,0 +1,114 @@
+* /*모든 선택자*/{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.outside {
+    background-color: olive;
+    width: 400px;
+    padding: 20px;
+}
+
+.inside {
+    background-color: whitesmoke;
+    height: 700px;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#x {
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+}
+
+.top h3 {
+    margin: 0;
+}
+
+.ply1 {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+  }
+
+.ply1 img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+}
+
+.ply1 div {
+    flex: 1;
+}   
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.button h3 {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 0;
+}   
+
+#play {
+    flex: 3;
+    border-radius: 100px / 13px;
+}
+
+#plus, #like {
+    border-radius: 50%;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ply {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.ply img {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+}
+
+.ply .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ply h4, .ply h5 {
+    margin: 0;
+}
